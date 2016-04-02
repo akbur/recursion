@@ -2,7 +2,6 @@
 // var stringifyJSON = JSON.stringify;
 
 // but you don't so you're going to write it from scratch:
-
 var stringifyJSON = function(obj) {
 	if (obj && typeof obj === 'object') {
 		if (Object.prototype.toString.apply(obj) === '[object Array]') {
@@ -25,5 +24,3 @@ var stringifyJSON = function(obj) {
 		return String(obj);
 	}
 };
-
-

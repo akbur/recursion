@@ -13,7 +13,7 @@ var getElementsByClassName = function(className) {
 		for (var i = 0; i < node.children.length; i++) {
 			getElements(node.children[i]);
 		}
-	}
+	};
 	getElements(document.body);
 	return results;
 };
